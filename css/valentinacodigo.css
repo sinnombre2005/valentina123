@@ -1,0 +1,76 @@
+body {
+  font-family: forge;
+}
+
+header {
+  background-color: purple;
+  padding: 20px;
+      animation: rainbow 5s infinite;
+
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.Imagen{
+  width: 350px;
+}
+section {
+  padding: 50px;
+
+}
+
+h2 {
+  color: #333;
+  font-size: 25px;
+      animation: rainbow 5s infinite , moveLeft .5s infinite alternate ;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+footer {
+  background-color: purple;
+  padding: 20px;
+  text-align: center;
+  color: white;
+      animation: rainbow 5s infinite;
+
+}
+@keyframes fadeIn {
+   from { opacity:0; }
+   to { opacity:1; }
+}
+
+@keyframes moveLeft{
+  to{
+    transform: translateX(10px);
+  }
+}
+
+@keyframes moveUp{
+  to{
+    transform: translateY(10px);
+  }
+}
+
+@keyframes rainbow {
+  0% { background-color: red; }
+  14% { background-color: orange; }
+  28% { background-color: yellow; }
+  42% { background-color: green; }
+  57% { background-color: blue; }
+  71% { background-color: indigo; }
+  85% { background-color: violet; }
+  100% { background-color: red; }
+}
